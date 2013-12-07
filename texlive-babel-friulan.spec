@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-babel-friulan
 Version:	20130504
-Release:	4
+Release:	5
 Summary:	Babel/Polyglossia support for Friulan(Furlan)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/friulan
