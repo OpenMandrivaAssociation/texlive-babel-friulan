@@ -1,12 +1,6 @@
-# revision 30361
-# category Package
-# catalog-ctan /macros/latex/contrib/babel-contrib/friulan
-# catalog-date 2013-05-04 11:13:00 +0200
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-babel-friulan
-Version:	20130504
-Release:	9
+Version:	1.3
+Release:	1
 Summary:	Babel/Polyglossia support for Friulan(Furlan)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/friulan
@@ -33,10 +27,10 @@ support of Friulan either with babel or with polyglossia.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/babel-friulan/friulan.ldf
-%doc %{_texmfdistdir}/doc/generic/babel-friulan/friulan.pdf
+%{_texmfdistdir}/tex/generic/babel-friulan
+%doc %{_texmfdistdir}/doc/generic/babel-friulan
 #- source
-%doc %{_texmfdistdir}/source/generic/babel-friulan/friulan.dtx
+%doc %{_texmfdistdir}/source/generic/babel-friulan
 
 #-----------------------------------------------------------------------
 %prep
