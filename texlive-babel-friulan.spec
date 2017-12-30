@@ -1,5 +1,5 @@
 Name:		texlive-babel-friulan
-Version:	20170414
+Version:	1.3
 Release:	1
 Summary:	Babel/Polyglossia support for Friulan(Furlan)
 Group:		Publishing
