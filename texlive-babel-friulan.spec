@@ -1,13 +1,13 @@
 Name:		texlive-babel-friulan
-Version:	1.3
-Release:	2
+Version:	39861
+Release:	1
 Summary:	Babel/Polyglossia support for Friulan(Furlan)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/friulan
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-friulan.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-friulan.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-friulan.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-friulan.r39861.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-friulan.doc.r39861.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-friulan.source.r39861.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,12 +18,12 @@ The package provides a language description file that enables
 support of Friulan either with babel or with polyglossia.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,7 +34,8 @@ support of Friulan either with babel or with polyglossia.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
